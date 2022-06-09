@@ -4,31 +4,73 @@ import static java.lang.Math.pow;
 
 public class App {
 
-    static void matrix(){
-//        Scanner sc = new Scanner(System.in);
-        int rows = 2, columns = 3;
-        int[][] firstMatrix = { {2, 3, 4}, {5, 2, 3} };
-        int[][] secondMatrix = { {-4, 5, 3}, {5, 6, 3} };
+// First method to calculate the Sum of positive numbers less or equal to n
+ static void first(){
+        // For input
+        Scanner sc = new Scanner(System.in);
 
-        // Adding Two matrices
-        int[][] sum = new int[rows][columns];
-        for(int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-                sum[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
-            }
+        System.out.println("First Method \nPlease enter a number!");
+
+        // Inputting data
+        int n = sc.nextInt();
+        int sum = 0;
+
+        if(n<0){
+            System.out.println("Please enter positive number");
         }
-
-        // Displaying the result
-        System.out.println("Sum of two matrices is: ");
-        for(int[] row : sum) {
-            for (int column : row) {
-                System.out.print(column + "    ");
+        else {
+            for(int i = 0; i <= n; i++){
+                sum = sum + i;
             }
-            System.out.println();
+            System.out.println("Sum of positive numbers less or equal to " + n +" is "+ sum);
+            System.out.println("--------------------------------------------------------\n");
         }
     }
 
-    static void matrix2(){
+// Second method to calculate Sum of positive odd numbers less or equal to n
+    static void second(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Second Method \nPlease enter a number!");
+        int n = sc.nextInt();
+        int sum = 0;
+
+        if(n<0){
+            System.out.println("Please enter positive number");
+        }
+        else {
+            for(int i = 0; i <= n; i++){
+                if (i%2==0){
+                    sum = sum + i;
+                }
+            }
+            System.out.println("Sum of positive odd numbers less or equal to " + n +" is "+ sum);
+            System.out.println("--------------------------------------------------------\n");
+        }
+    }
+
+
+// Third method to calculate Sum of square positive numbers less or equal to n
+    static void third(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Third Method \nPlease enter a number!");
+        int n = sc.nextInt();
+        int sum = 0;
+
+        if(n<0){
+            System.out.println("Please enter positive number");
+        }
+        else {
+            for(int i = 0; i <= n; i++){
+                sum += pow(i,2);
+            }
+            System.out.println("Sum of square positive numbers less or equal to " + n +" is "+ sum);
+            System.out.println("--------------------------------------------------------\n");
+        }
+    }
+
+
+// Method to calculate the sum of two matrices
+    static void matrixSum(){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number of rows");
@@ -95,7 +137,9 @@ public class App {
         }
     }
 
-    static void matrix3(){
+
+// Method to calculate the product of two matrices
+    static void matrixProduct(){
 
         Scanner sc = new Scanner(System.in);
 
@@ -180,66 +224,11 @@ public class App {
         }
     }
 
-
-    static void first(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("First Method \nPlease enter a number!");
-        int n = sc.nextInt();
-        int sum = 0;
-
-        if(n<0){
-            System.out.println("Please enter positive number");
-        }
-        else {
-            for(int i = 0; i <= n; i++){
-                sum = sum + i;
-            }
-            System.out.println("Sum of positive numbers less or equal to " + n +" is "+ sum);
-            System.out.println("--------------------------------------------------------\n");
-        }
-    }
-
-    static void second(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Second Method \nPlease enter a number!");
-        int n = sc.nextInt();
-        int sum = 0;
-
-        if(n<0){
-            System.out.println("Please enter positive number");
-        }
-        else {
-            for(int i = 0; i <= n; i++){
-                if (i%2==0){
-                    sum = sum + i;
-                }
-            }
-            System.out.println("Sum of positive odd numbers less or equal to " + n +" is "+ sum);
-            System.out.println("--------------------------------------------------------\n");
-        }
-    }
-
-    static void third(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Third Method \nPlease enter a number!");
-        int n = sc.nextInt();
-        int sum = 0;
-
-        if(n<0){
-            System.out.println("Please enter positive number");
-        }
-        else {
-            for(int i = 0; i <= n; i++){
-                sum += pow(i,2);
-            }
-            System.out.println("Sum of square positive numbers less or equal to " + n +" is "+ sum);
-            System.out.println("--------------------------------------------------------\n");
-        }
-    }
     public static void main(String[] args) {
         first();
         second();
         third();
-        matrix3();
+        matrixSum();
+        matrixProduct();
     }
 }
