@@ -91,7 +91,7 @@ public class App {
             }
         }
 
-//        First matrix preview
+//        First matrix preview using foreach loop
         System.out.println("\nFirst Matrix Preview");
         for(int[] a : firstMatrix){
             for (int b : a){
@@ -110,7 +110,7 @@ public class App {
             }
         }
 
-        //        Second matrix preview
+        //        Second matrix preview using foreach loop
         System.out.println("\nSecond Matrix Preview");
         for(int[] x : secondMatrix){
             for (int y : x){
@@ -127,7 +127,7 @@ public class App {
             }
         }
 
-        // Displaying the result
+        // Displaying the result using foreach loop
         System.out.println("Sum of two matrices is: ");
         for(int[] row : sum) {
             for (int column : row) {
@@ -161,7 +161,7 @@ public class App {
             }
         }
 
-//        First matrix preview
+//        First matrix preview using foreach loop
         System.out.println("\nFirst Matrix Preview");
         for(int[] a : firstMatrix){
             for (int b : a){
@@ -194,7 +194,7 @@ public class App {
                 secondMatrix[i][j] = sc.nextInt();
             }
         }
-        //        Second matrix preview
+        //        Second matrix preview using foreach loop
         System.out.println("\nSecond Matrix Preview");
         for(int[] x : secondMatrix){
             for (int y : x){
@@ -214,7 +214,7 @@ public class App {
             }
         }
 
-        // Displaying the result
+        // Displaying the result using foreach loop
         System.out.println("Product of two matrices is: ");
         for(int[] row : product) {
             for (int column : row) {
