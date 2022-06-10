@@ -102,7 +102,7 @@ public class App {
 
 
 //        Second matrix
-        System.out.println("\nFill in second matrix\n");
+        System.out.println("\nFill in second matrix, row by row\n");
         for (int i=0; i<rows; i++){
             System.out.println("Row "+ (i+1));
             for (int j = 0; j < columns; j++){
