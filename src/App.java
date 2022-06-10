@@ -83,7 +83,7 @@ public class App {
         int[][] secondMatrix = new int[rows][columns];
 
 //        First matrix
-        System.out.println("\nFill in first matrix\n");
+        System.out.println("\nFill in first matrix row by row\n");
         for (int i=0; i<rows; i++){
             System.out.println("Row "+ (i+1));
             for (int j = 0; j < columns; j++){
