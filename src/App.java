@@ -40,7 +40,7 @@ public class App {
         else {
             for(int i = 0; i <= n; i++){
                 if (i%2==0){
-                    sum = sum + i;
+                    sum += i;
                 }
             }
             System.out.println("Sum of positive odd numbers less or equal to " + n +" is "+ sum);
