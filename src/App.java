@@ -20,7 +20,7 @@ public class App {
         }
         else {
             for(int i = 0; i <= n; i++){
-                sum = sum + i;
+                sum += i;
             }
             System.out.println("Sum of positive numbers less or equal to " + n +" is "+ sum);
             System.out.println("--------------------------------------------------------\n");
