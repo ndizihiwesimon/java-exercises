@@ -6,7 +6,7 @@ public class App {
 
 // First method to calculate the Sum of positive numbers less or equal to n
  static void first(){
-        // For input
+    
         Scanner sc = new Scanner(System.in);
 
         System.out.println("First Method \nPlease enter a number!");
