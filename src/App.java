@@ -57,7 +57,7 @@ public class App {
         int sum = 0;
 
         if(n<0){
-            System.out.println("Please enter positive number");
+            System.out.println("Please enter positive number only");
         }
         else {
             for(int i = 0; i <= n; i++){
