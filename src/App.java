@@ -100,7 +100,6 @@ public class App {
             System.out.println();
         }
 
-
 //        Second matrix
         System.out.println("\nFill in second matrix, row by row\n");
         for (int i=0; i<rows; i++){
@@ -136,7 +135,6 @@ public class App {
             System.out.println();
         }
     }
-
 
 // Method to calculate the product of two matrices
     static void matrixProduct(){
